@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flores e Café</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="menu-container">
+        <h1 class="titulo-principal">Flores & Café</h1>
+        <button class="menu-hamburguer"><i class="ph ph-list"></i></button>
+        <nav class="menu">
+          <ul>
+            <li><a href="">Início</a></li>
+            <li><a href="">Cardápio</a></li>
+            <li><a href="">Flores</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="hero">
+        <div class="sec-principal">
+          <h1 class="titulo">
+            Flores & café: <br />
+            um refúgio acolhedor
+          </h1>
+          <p>
+            Café da manhã, flores e o aconchego<br />
+            que você merece
+          </p>
+          <button>Ver Cardapio</button>
+        </div>
+      </div>
+
+      <h2>Cardápio</h2>
+
+      <div class="cardapio-container">
+        <div class="img-cardapio">
+          <img src="imagens/cafe.png" alt="" />
+          <h3>Café</h3>
+          <p>R$ 5</p>
+        </div>
+
+        <div class="img-cardapio">
+          <img src="imagens/cha.png" alt="" />
+          <h3>Chá</h3>
+          <p>R$ 5</p>
+        </div>
+
+        <div class="img-cardapio">
+          <img src="imagens/bolo.png" alt="" />
+          <h3>Bolo</h3>
+          <p>R$ 12</p>
+        </div>
+
+        <div class="img-cardapio">
+          <img src="imagens/doces.png" alt="" />
+          <h3>Doces</h3>
+          <p>R$ 10</p>
+        </div>
+      </div>
+
+      <h2>Flores</h2>
+      <div class="flores-container">
+        <div class="img-flores">
+          <img src="imagens/planta.png" alt="" />
+        </div>
+
+        <div class="img-flores">
+          <img src="imagens/flores.png" alt="" />
+        </div>
+
+        <div class="img-flor-maior">
+          <img src="imagens/flor-maior.png" alt="" />
+
+          <div class="but-icons">
+            <button class="whatsapp">Fale conosco no whatsapp</button>
+            <div class="icones">
+              <a href=""><i class="ph ph-instagram-logo"></i></a>
+              <a href=""><i class="ph ph-facebook-logo"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre">
+        <h2>Sobre nós</h2>
+        <p>
+          Descubra um espaço acolhedor onde cada detalhe é pensado para trazer
+          conforto e beleza para.
+        </p>
+      </div>
+
+      <div class="contato">
+        <h2>Contato</h2>
+        <p><i class="ph-fill ph-map-pin"></i>Rua das flores, 123</p>
+        <p><i class="ph-fill ph-phone"></i>(11)12345-6789</p>
+      </div>
+    </main>
+
+    <script>
+      const menuBotao = document.querySelector(".menu-hamburguer");
+      const menuNav = document.querySelector(".menu");
+
+      menuBotao.addEventListener("click", () => {
+        menuNav.classList.toggle("ativo");
+      });
+    </script>
+  </body>
+</html>
