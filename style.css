@@ -202,7 +202,7 @@ h2 {
 @media screen and (max-width: 575px) {
   main {
     margin-top: 50px !important;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     background-color: #f7e9d4;
   }
