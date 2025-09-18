@@ -1,0 +1,312 @@
+body {
+  background-color: #a56746;
+}
+
+main {
+  margin-top: 50px !important;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #f7e9d4;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.titulo-principal {
+  font-size: 1.5em;
+  padding: 0;
+}
+
+.menu-hamburguer {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: none;
+}
+
+.menu ul {
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+nav ul li {
+  vertical-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: #a56746;
+  color: #f7e9d4;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 200ms;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav ul li.titulo {
+  justify-content: first baseline;
+  font-size: large;
+}
+
+.hero {
+  background-image: url(imagens/hero.png);
+  background-size: 100% 400px;
+  height: 400px;
+}
+
+.sec-principal {
+  margin-left: 40px;
+}
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  color: #4c2711;
+  font-size: 3em;
+  font-weight: 600;
+  padding-top: 40px;
+  margin: 0;
+}
+
+p {
+  color: #4c2711;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+button {
+  color: #fff;
+  background-color: #a56746;
+  border-radius: 6px;
+  border: none;
+  padding: 14px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f7e9d4;
+  color: #a56746;
+}
+
+.but-icons {
+  margin-left: 20px;
+}
+
+h2 {
+  color: #4c2711;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.6em;
+  margin: 40px 40px 20px;
+}
+
+section,
+.swiper2 {
+  display: flex;
+}
+
+.swiper2 {
+  max-width: 420px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.swiper-navigation-icon {
+  display: none;
+}
+
+.swiper1-next,
+.swiper2-next {
+  background-color: #a56746;
+  color: #fff;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.swiper2-next::after,
+.swiper1-next::after {
+  content: "\f054";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.swiper2-prev,
+.swiper1-prev {
+  background-color: #a56746;
+  color: #fff;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.swiper2-prev::after,
+.swiper1-prev::after {
+  content: "\f053";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.swiper1-pagination {
+  text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #a56746;
+}
+
+.img-cardapio,
+.img-flores {
+  width: 170px;
+  height: 170px;
+  border-radius: 6px;
+  margin: 20px;
+}
+
+.swiper-slide h3 {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.swiper-slide p {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.img-flor-maior img {
+  max-width: 270px;
+  height: 270px;
+  margin: 20px 20px;
+  border-radius: 6px;
+  flex: auto;
+}
+
+.sobre {
+  margin-top: -200px;
+  padding-right: 12px;
+  max-width: 250px;
+  margin-right: 12px;
+}
+.sobre p {
+  margin-left: 40px;
+  font-size: 1em;
+}
+
+.contato {
+  padding-bottom: 20px;
+}
+
+.contato p {
+  width: 300px;
+  margin-left: 40px;
+  font-size: 1em;
+}
+
+.whatsapp {
+  width: 280px;
+  margin-top: 30px;
+}
+
+.icones {
+  margin-top: 30px;
+}
+
+.ph-instagram-logo {
+  color: #fff;
+  background-color: #4c2711;
+  font-size: large;
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.ph-facebook-logo {
+  color: #fff;
+  background-color: #4c2711;
+  font-size: large;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.icones a {
+  text-decoration: none;
+}
+
+.icones a i:hover {
+  color: #4c2711;
+  background-color: #f7e9d4;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    margin-top: 50px !important;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #f7e9d4;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding: 20px 0;
+  }
+
+  .menu-hamburguer {
+    display: block;
+    z-index: 2;
+    color: #4c2711;
+    margin-left: 110px;
+  }
+
+  .menu ul {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 20%;
+    margin-left: 280px;
+    background-color: #f7e9d4;
+    flex-direction: column;
+    text-align: end;
+  }
+
+  .menu.ativo ul {
+    display: flex;
+  }
+
+  .sobre {
+    margin-top: 1px;
+  }
+
+  .img-flor-maior img {
+    width: 240px;
+    height: 240px;
+
+    border-radius: 6px;
+  }
+
+  section,
+  .swiper2 {
+    display: block;
+  }
+  .whatsapp {
+    width: 240px;
+    margin-top: 15px;
+  }
+}

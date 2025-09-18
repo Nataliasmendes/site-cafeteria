@@ -3,32 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Flores e Café</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
   </head>
   <body>
     <main>
@@ -62,44 +42,66 @@
 
       <h2>Cardápio</h2>
 
-      <div class="cardapio-container">
-        <div class="img-cardapio">
-          <img src="imagens/cafe.png" alt="" />
-          <h3>Café</h3>
-          <p>R$ 5</p>
+      <div class="swiper swiper1">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="img-cardapio" src="src/imagens/cafe.png" alt="Café" />
+            <h3>Café</h3>
+            <p>R$ 5</p>
+          </div>
+
+          <div class="swiper-slide">
+            <img class="img-cardapio" src="src/imagens/cha.png" alt="Chá" />
+            <h3>Chá</h3>
+            <p>R$ 5</p>
+          </div>
+          <div class="swiper-slide">
+            <img class="img-cardapio" src="src/imagens/bolo.png" alt="Bolo" />
+            <h3>Bolo</h3>
+            <p>R$ 12</p>
+          </div>
+          <div class="swiper-slide">
+            <img class="img-cardapio" src="src/imagens/doces.png" alt="Doces" />
+            <h3>Doces</h3>
+            <p>R$ 10</p>
+          </div>
         </div>
 
-        <div class="img-cardapio">
-          <img src="imagens/cha.png" alt="" />
-          <h3>Chá</h3>
-          <p>R$ 5</p>
-        </div>
+        <div class="swiper1-pagination"></div>
 
-        <div class="img-cardapio">
-          <img src="imagens/bolo.png" alt="" />
-          <h3>Bolo</h3>
-          <p>R$ 12</p>
-        </div>
-
-        <div class="img-cardapio">
-          <img src="imagens/doces.png" alt="" />
-          <h3>Doces</h3>
-          <p>R$ 10</p>
-        </div>
+        <div class="swiper-button-prev swiper1-prev"></div>
+        <div class="swiper-button-next swiper1-next"></div>
       </div>
 
       <h2>Flores</h2>
-      <div class="flores-container">
-        <div class="img-flores">
-          <img src="imagens/planta.png" alt="" />
+
+<section class="flowers">
+      <div class="swiper swiper2">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="img-flores" src="src/imagens/planta.png" alt="Planta" />
+            <h3>Vaso planta artificial</h3>
+            <p>R$ 5</p>
+          </div>
+
+          <div class="swiper-slide">
+            <img class="img-flores" src="src/imagens/flores.png" alt="Flores" />
+            <h3>Ramo de flores</h3>
+            <p>R$ 45</p>
+          </div>
         </div>
 
-        <div class="img-flores">
-          <img src="imagens/flores.png" alt="" />
-        </div>
+        
 
-        <div class="img-flor-maior">
-          <img src="imagens/flor-maior.png" alt="" />
+        <div class="swiper-button-prev swiper2-prev"></div>
+        <div class="swiper-button-next swiper2-next"></div>
+        </div>
+      </div>
+
+      <div class="img-flor-maior">
+          <img src="src/imagens/flor-maior.png" alt="" />
 
           <div class="but-icons">
             <button class="whatsapp">Fale conosco no whatsapp</button>
@@ -108,8 +110,7 @@
               <a href=""><i class="ph ph-facebook-logo"></i></a>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
 
       <div class="sobre">
         <h2>Sobre nós</h2>
@@ -126,13 +127,7 @@
       </div>
     </main>
 
-    <script>
-      const menuBotao = document.querySelector(".menu-hamburguer");
-      const menuNav = document.querySelector(".menu");
-
-      menuBotao.addEventListener("click", () => {
-        menuNav.classList.toggle("ativo");
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
